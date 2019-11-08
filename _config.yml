@@ -7,17 +7,17 @@
 #
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
+remote_theme : pmarsceill/just-the-docs
 
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Just the Docs
-description: A Jekyll theme for documentation
+title: "Hyoveemo의 개발 블로그"
+description: "공부한 것을 기록하는 블로그입니다. "
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://HyoVeemo.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-remote_theme : mmistakes/minimal-mistakes
+url: "https://HyoVeemo.github.io"
 permalink: pretty
 exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile"]
 
