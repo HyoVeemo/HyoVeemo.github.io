@@ -1,60 +1,48 @@
-# Welcome to Jekyll!
+# Permalinks
 #
-# This config file is meant for settings that affect your whole site, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing these this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-remote_theme : pmarsceill/just-the-docs
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+#relative_permalinks: true
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: "Hyoveemo의 개발 블로그"
-description: "공부한 것을 기록하는 블로그입니다. "
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://HyoVeemo.github.io"
-permalink: pretty
-exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile"]
+# Setup
+title:               HyoVeeemo's blog
+tagline:             'Back-end Dev Engineer'
+description:         '공부한 것을 정리하는 블로그입니다. .'
+url:                 https://HyoVeemo.github.com
+baseurl:             ''
+paginate:            5
 
-# Set a path/url to a logo that will be displayed instead of the title
-#logo: "/assets/images/just-the-docs.png"
+# About/contact
+author:
+  name:              HyoSeon Jegal
+  url:               https://HyoVeemo.github.com
+  email:             dott.goo@gmail.com
 
-# Enable or disable the site search
-search_enabled: true
+# Custom vars
+version:             1.0.0
 
-# Set the search token separator for hyphenated-word search:
-search_tokenizer_separator: /[\s/]+/
+plugins: [jekyll-paginate]
 
-# Enable or disable heading anchors
-heading_anchors: true
+# Tag setting
+#collections:
+#  tags:
+#    output: true
+#    permalink: /tags/:path/
 
-# Aux links for the upper right navigation
-aux_links:
-  "Just the Docs on GitHub":
-    - "//github.com/pmarsceill/just-the-docs"
+#defaults:
+#  - scope:
+#      path: ''
+#      type: tags
+#    values:
+#      layout: tag
 
-# Footer content appears at the bottom of every page's main content
-footer_content: "Copyright &copy; 2017-2019 Patrick Marsceill. Distributed by an <a href=\"https://github.com/pmarsceill/just-the-docs/tree/master/LICENSE.txt\">MIT license.</a>"
+google_analytics:
+  ua: 'UA-109898110-1'
 
-# Color scheme currently only supports "dark" or nil (default)
-color_scheme: nil
+github:
+  repo: 'https://github.com/HyoVeemo/HyoVeemo.github.io'
 
-# Google Analytics Tracking (optional)
-# e.g, UA-1234567-89
-ga_tracking: UA-2709176-10
+category_dir: category/
+tag_dir: tag/
 
-plugins:
-  - jekyll-seo-tag
-
-compress_html:
-  clippings: all
-  comments: all
-  endings: all
-  startings: []
-  blanklines: false
-  profile: false
+excerpt_separator: ""
