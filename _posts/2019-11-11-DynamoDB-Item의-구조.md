@@ -1,3 +1,10 @@
+---
+layout: post
+title: Dyanamo 시작하기(2)
+categories: DynamoDB
+tags: [DynamoDB, NoSQL]
+---
+
 # Single item actions
 
 
